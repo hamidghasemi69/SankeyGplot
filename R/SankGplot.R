@@ -13,13 +13,16 @@
 #'@import ggalluvial
 #'@import readxl
 #'@import reshape
-#' @param filDir Path to the input csv file
-#' @keywords SankeyGPlot
-#' @return A Sankey Diagram of input file
-#' @export
-#' @example
+#'@param filDir Path to the input csv file
+#'@keywords SankeyGPlot
+#'@return A Sankey Diagram of input file
+#'@export
+#'@example
 
 SankeyGplot <- function(InputDir, White_Space, OutputDir){
+
+  require(ggplot2)
+  require(reshape)
 
   if (White_Space) {
     HorizontalSize = 0.03 #HorizontalSize will determine either we would like to have vertical WhiteSpace
