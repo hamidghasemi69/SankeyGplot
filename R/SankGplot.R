@@ -23,6 +23,7 @@ SankeyGplot <- function(InputDir, White_Space, OutputDir){
 
   require(ggplot2)
   require(reshape)
+  require(readxl)
 
   if (White_Space) {
     HorizontalSize = 0.03 #HorizontalSize will determine either we would like to have vertical WhiteSpace
