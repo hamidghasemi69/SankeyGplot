@@ -19,21 +19,25 @@ The Output parameters:
 
 - @OutputDir : Directory to the save the generated output file
 
-## Vignette Info
+## Summary
 
-A short discription of the SankeyGplot package. The input and output parameters are described.
+A short discription of the SankeyGplot package. The input and output parameters are described above. In order to 
+make the output standard, we change the columns into "Variable", "Year" and the "Measurement".
 
 ## Usage
 
 This package can be installed from github
 
     usage: 
-      create_sankey(Input_Directory,White_Option = TRUE , Output_Directory)
+      #install from github 
+      install_github("hamidghasemi69/SankeyGplot")
+      #using the library
+      SankeyGplot(Input_Directory,White_Option = TRUE , Output_Directory)
 
 
-## Example Dataset
+## Dataset to verify
 
-An example dataset can be found at . This dataset contains the Vascular Risk Factor Contributions to Stroke Incidence from Years 1990 to 2010. 
+An example dataset can be found at https://github.com/hamidghasemi69/SankeyGplot. This dataset contains the Vascular Risk Factor Contributions to Stroke Incidence from Years 1990 to 2010. 
 
 
 
