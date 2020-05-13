@@ -9,6 +9,13 @@ Authors@R:
            email = "hamidghasemi69@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This is an R package to plot the Sankey Diagram using ggplot2.
+Imports:
+	ggplot2
+	ggalluvial
+	readxl
+	reshape
+	markdown
+	
 License: A license
 Depends: R (>= 4.0.0)
 Encoding: UTF-8
