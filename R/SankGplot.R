@@ -32,10 +32,10 @@ SankeyGplot <- function(InputDir, White_Space, OutputDir){
 
 
   sampleData <- read.csv(InputDir,as.is=TRUE, check.names = FALSE)
-  sampleData <- melt(sampleData, id=c("Risk Factors for Stroke in Blacks"))
+  sampleData <- melt(sampleData, id=c(colnames(sampleData)[1]))
 
   # in order to be standard, we change the columns into Risk Factor , Year and Measurement!
-  newColNames<-c("Risk.Factor","Year","Measurement")
+  newColNames<-c("Variable","Year","Measurement")
   colnames(sampleData)<-newColNames
 
 
@@ -87,10 +87,10 @@ SankeyGplot <- function(InputDir, White_Space, OutputDir){
     sampleData.ext  = rbind(sampleData.ext,sampleDataYear)
   }
 
-  ggplot(data=sampleData.ext, aes_string(x = "Year", y = "Measurement", group = "Risk.Factor")) +
+  ggplot(data=sampleData.ext, aes_string(x = "Year", y = "Measurement", group = "Variable")) +
     geom_ribbon(aes(ymin=yMin,
                     ymax=yMax,
-                    fill = factor(Risk.Factor)), alpha = 0.5)+
+                    fill = factor(Variable)), alpha = 0.5)+
     geom_vline(xintercept =verticalDivider ,
                colour = "white", size=VerticalSize)+
     theme_bw() + #remove gray background and show black border
