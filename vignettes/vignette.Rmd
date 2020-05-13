@@ -1,0 +1,40 @@
+---
+title: "Sankey Diagram Using ggplot Library"
+author: "Hamidreza Ghasemi Damavandi"
+date: "2020-05-13"
+input: "Directory for the Input CSV File"
+output: ".png of the Sankey Diagram"
+vignette: >
+  %\VignetteIndexEntry{vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The input parameters:
+
+- @InputDir : Directory to the input CSV file
+- @White_Option : Option either the Sankey diagram should have vertical and horizontal white space or not
+
+The Output parameters:
+
+- @OutputDir : Directory to the save the generated output file
+
+## Vignette Info
+
+A short discription of the SankeyGplot package. The input and output parameters are described.
+
+## Usage
+
+This package can be installed from github
+
+    usage: 
+      create_sankey(Input_Directory,White_Option = TRUE , Output_Directory)
+
+
+## Example Dataset
+
+An example dataset can be found at . This dataset contains the Vascular Risk Factor Contributions to Stroke Incidence from Years 1990 to 2010. 
+
+
+
+
