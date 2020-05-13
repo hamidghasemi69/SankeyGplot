@@ -12,8 +12,11 @@ Description: This is an R package to plot the Sankey Diagram using ggplot2.
 License: A license
 Depends: R (>= 4.0.0)
 Imports:	
-	ggplot2
-	reshape
+	ggplot2,
+	reshape,
+	ggalluvial,
+	readxl
+
 
 Encoding: UTF-8
 LazyData: true
