@@ -10,9 +10,9 @@
 #' It gets an input "OutputDir" for the directory of generating the output generated Sankey diagram
 #'
 #'@import ggplot2
-#'@import ggalluvial
 #'@import readxl
 #'@import reshape
+#'
 #'@param filDir Path to the input csv file
 #'@keywords SankeyGPlot
 #'@return A Sankey Diagram of input file
