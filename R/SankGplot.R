@@ -1,9 +1,9 @@
-#' Load a Matrix
+#' Read input csv file to generate the Sankey Diagram
 #'
 #' This function loads a file directory to plot the sankey diagram using ggplot library.
 #' It assumes the input file is a csv file with the columns being the risk factor names and
 #' the corresponding years in which the measurements are recorded.
-#' In order to have a standard form, the column names are changed into Risk Factor, Year and Measurement
+#' In order to have a standard form, the column names are changed into Variable, Year and Measurement
 #' kepted.
 #' It accepts a White_Option boolean variable indicating either we would like to print
 #' the vertical and horizontal white spaces
@@ -19,7 +19,6 @@
 #' @export
 #' @example
 
-#assumes ORDER of columns to determine what is the group, x and y columns
 SankeyGplot <- function(InputDir, White_Space, OutputDir){
 
   if (White_Space) {
@@ -99,7 +98,7 @@ SankeyGplot <- function(InputDir, White_Space, OutputDir){
     labs(fill=colnames(sampleData)[1])+
     xlab(colnames(sampleData)[2])+
     ylab(colnames(sampleData)[3])
-    ggsave(
+   ggsave(
     filename=paste0(OutputDir,'Sankey.pdf'),
   )
 
